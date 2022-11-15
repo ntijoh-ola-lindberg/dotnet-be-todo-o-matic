@@ -33,6 +33,5 @@ dotnet ef database update
 
 Lägg till CORS: https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-7.0#cors-with-named-policy-and-middleware 
 
-
-
-http://localhost:5150/swagger/index.html 
+Testa din webservice: http://localhost:5150/swagger/index.html 
+PostgreSQL Management Tool för VSCode: https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres 
