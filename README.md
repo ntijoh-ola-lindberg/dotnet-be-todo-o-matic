@@ -2,7 +2,7 @@
 
 Dotnet backend with Postgres database running in Docker
 
--
+---
 
 Installera dotnet 7: Installera Software Developer Kit (v7): `brew install dotnet-sdk`
 
