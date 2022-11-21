@@ -22,6 +22,8 @@ Installera Postgres i Docker: https://hackernoon.com/dont-install-postgres-docke
 
  ~~Skapa tabell i databasen: `create table todos(id serial, title varchar(255), completed boolean);`~~
 
+Starta Postgres i Docker: `docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres`
+
 Installera Postgress Entity Framework Core provider med nuget: `dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL`
 
 Generera och kör en migrations-fil från modell-filerna:
