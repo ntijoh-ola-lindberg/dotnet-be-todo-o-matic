@@ -1,37 +1,42 @@
-# .NET backend with Postgres DB running in Docker for Todo-o-matic VUE frontend
+# .NET backend for Todo-o-matic
+
+Backend using .NET v7 with Postgres DB running in Docker.   
+Demo project that replaces Todo-o-matic Sinatra backend.
 
 ---
 
-Installera dotnet 7: Installera Software Developer Kit (v7): `brew install dotnet-sdk`
+## Install + getting started
 
-Skapa demoprojekt:
+**1. Install .NET 7 SDK** (Software Developer Kit): `brew install dotnet-sdk`
+
+**2. Create demo project:**
 ```
 dotnet new webapi -o TodoApi
 cd TodoApi
 dotnet add package Microsoft.EntityFrameworkCore.InMemory
 code -r ../TodoApi
 ```
+*Complete guide for installing .NET with demo project: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio-code*
 
-Hela guiden finns på: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio-code
+**3. Install Docker:** `brew install —cask docker`
 
-Installera Docker: `brew install —cask docker`
+**4. Install Postgres Docker image:** https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
 
-Installera Postgres i Docker: https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
+*Used to start the Docker container with persistent data on disk:* `docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres`
 
- ~~Skapa tabell i databasen: `create table todos(id serial, title varchar(255), completed boolean);`~~
+**5. Install Postgress Entity Framework Core provider with NuGet:** `dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL`
 
-Starta Postgres i Docker: `docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres`
+**6. Create your model files.** See this demo project.
 
-Installera Postgress Entity Framework Core provider med nuget: `dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL`
-
-Generera och kör en migrations-fil från modell-filerna:
+**7. Generate and run DB migration files from modell classes**
 ```
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
-Lägg till CORS: https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-7.0#cors-with-named-policy-and-middleware 
+**8. Add CORS exception for localhost:** https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-7.0#cors-with-named-policy-and-middleware 
 
-Testa din webservice: http://localhost:5150/swagger/index.html 
-PostgreSQL Management Tool för VSCode: https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres 
+**9. Testa your web service with Swagger:** http://localhost:5150/swagger/index.html  
+
+**10. PostgreSQL Management Tool för VSCode:** https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres 
