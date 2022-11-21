@@ -1,6 +1,4 @@
-# Dotnet backend for Todo-o-matic
-
-Dotnet backend with Postgres database running in Docker
+#.NET backend with Postgres DB running in Docker for Todo-o-matic VUE frontend
 
 ---
 
