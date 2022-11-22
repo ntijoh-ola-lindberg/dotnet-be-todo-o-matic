@@ -7,10 +7,6 @@ Demo project that replaces Todo-o-matic Sinatra backend.
 
 ## Install + getting started
 
-# dhoaenus
-# hoanes
-
-
 1. **Install .NET 7 SDK** (Software Developer Kit): `brew install dotnet-sdk`
 
 2. **Create demo project:**
