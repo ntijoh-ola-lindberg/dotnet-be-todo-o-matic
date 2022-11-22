@@ -40,3 +40,5 @@ dotnet ef database update
 **9. Testa your web service with Swagger:** http://localhost:5150/swagger/index.html  
 
 **10. PostgreSQL Management Tool för VSCode:** https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres 
+
+**11. C# REPL: https://github.com/waf/CSharpRepl
