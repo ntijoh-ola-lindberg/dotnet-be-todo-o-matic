@@ -38,10 +38,12 @@ Demo project that replaces Todo-o-matic Sinatra backend.
 
 8. **Add CORS exception for localhost:** https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-7.0#cors-with-named-policy-and-middleware 
 
-9. **Test your web service with Swagger:** http://localhost:5150/swagger/index.html  
+## Tools
 
-10. **PostgreSQL Management Tool för VSCode:** https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres
+* **Test your web service with Swagger:** http://localhost:5150/swagger/index.html  
 
-11. **C# REPL:** https://github.com/waf/CSharpRepl
+* **PostgreSQL Management Tool för VSCode:** https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres
 
-12. **Uninstall tool for .NET:** https://learn.microsoft.com/en-us/dotnet/core/additional-tools/uninstall-tool?tabs=macos 
+* **C# REPL:** https://github.com/waf/CSharpRepl
+
+* **Uninstall tool for .NET:** https://learn.microsoft.com/en-us/dotnet/core/additional-tools/uninstall-tool?tabs=macos 
