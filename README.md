@@ -14,7 +14,7 @@ Demo project that replaces Todo-o-matic Sinatra backend.
     dotnet new webapi -o TodoApi 
     cd TodoApi 
     dotnet add package Microsoft.EntityFrameworkCore.InMemory 
-    code -r ../TodoApi
+    code ../TodoApi
     ```
 
     *Complete guide for installing .NET with demo project: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio-code*
