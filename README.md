@@ -25,6 +25,7 @@ Demo project that replaces Todo-o-matic Sinatra backend.
     *Start Docker container with persistent data on disk:* `docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres`
 
 5. **Install Postgress Entity Framework Core provider with NuGet:** `dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL`
+6. Change in Program.cs to use the Npgsql instead of inmemory db.
 
 6. **Create your model files.** See *this* demo project.
 
