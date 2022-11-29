@@ -16,8 +16,7 @@ Demo project that replaces Todo-o-matic Sinatra backend.
     dotnet add package Microsoft.EntityFrameworkCore.InMemory 
     code ../TodoApi
     ```
-
-    *Complete guide for installing .NET with demo project: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio-code*
+3. Complete guide for installing .NET with demo project: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio-code From this guide you must create the Model, Context file + scaffold the controller. You also must add the certs for https.
 
 3. **Install Docker:** `brew install —cask docker`
 
